@@ -34,3 +34,29 @@ font-family: "Rooto Mono", monospace;
     border-bottom: 6px solid var(--marcador);
     font-family: "Rooto Mono", monospace;
 }
+.coteudo{
+    max-width: 12000px;
+    margin:0 auto;
+}
+.parametro{
+    background-color: var(--fundo);
+    border:2px solid var(--tabela);
+    margin-top: 32px;
+    padding: 24px;
+}
+.parametro-titulo{
+    width: 50%;
+    margin:0 auto;
+}
+.parametro-senha-botoes{
+    display:flex;
+    justify-content:center;
+}
+.parametro-senha-botao{
+    background-color: var(--fundo);
+    color:var(--texto)
+    border: 2px solid var(var(--texto));
+    padding: 24px;
+    font-size: 24px;
+cursor:pointer;
+}
