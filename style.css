@@ -4,8 +4,8 @@
     --fundo: #241212;
     --texto: #fcd5d5;
     --fraca: #e7737e;
-    --media: #f55477;
-    --forte: #f70a51;
+    --media: #f5e554;
+    --forte: #69f70a;
     --tabela: #3f1e1e;
     --marcador: #fd9c9c;
 }
@@ -26,6 +26,9 @@ body {
     font-family: "Rooto Mono", monospace;
 }
 
+#campo-senha{
+  width: 300px;
+}
 .titulo-principal {
     font-size: 32px;
 }
@@ -73,6 +76,7 @@ body {
     cursor: pointer;
 }
 
+
 .parametro-senha-texto {
     padding: 24px;
     border-top: 2px solid var(--marcador);
@@ -86,33 +90,6 @@ label {
 
 }
 
-.checkbox {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: relative;
-    top: 1px;
-    width: 27px;
-    height: 27px;
-    border: 1px solid #475569;
-    border-radius: 10px;
-    transition: background 0.2s ease;
-    cursor: pointer;
-    display: block;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    content: '';
-    top: 2px;
-    left: 8px;
-    width: 7px;
-    height: 14px;
-    opacity: 0;
-    transform: rotate(45deg) scale(0);
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    transition: all 0.3s ease;
-    transition-delay: 0.15s;
-
-}
 
 .barra {
     background-color: var(--fundo);
@@ -133,8 +110,13 @@ label {
 
 .fraca {
     background-color: var(--fraca);
-    width: 100%;
+    width: 25%;
 }
+.forte{
+  width: 100%;
+  background-color: var(--forte);
+}
+
 
 .parametro-senha-textos {
     display: flex;
@@ -149,60 +131,19 @@ label {
 
 
 
-.cbx {
-   
-  }
-  
-  .cbx:after {
-    
-  }
-  
-  #cbx:checked ~ .cbx {
-    border-color: transparent;
-    background: #ec4899;
-    animation: jelly 0.4s ease;
-  }
-  
-  #cbx:checked ~ .cbx:after {
-    opacity: 1;
-    transform: rotate(45deg) scale(1);
-  }
-  
-  
-  
-  @keyframes jelly {
-    from {
-      transform: scale(1, 1);
-    }
-  
-    20% {
-      transform: scale(1.3, 0.7);
-    }
-  
-    40% {
-      transform: scale(0.7, 1.3);
-    }
-  
-    60% {
-      transform: scale(1.1, 0.9);
-    }
-  
-    80% {
-      transform: scale(0.9, 1.1);
-    }
-  
-    to {
-      transform: scale(1, 1);
-    }
-  }
-  
-  .hidden-xs-up {
-    display: none!important;
-  }
+.checkbox {
+  position: relative;
+  top: 1px;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-@media screen and (min-width:768px) {
-    parametro-coluna-senha {
-        flex-direction: row;
-    }
-
+.entropia{
+  display: none;
 }

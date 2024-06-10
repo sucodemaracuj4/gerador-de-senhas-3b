@@ -20,11 +20,19 @@
 </div> 
 <div class="conteudo-senha">
     <label for="senha">Senha</label>
-    <input name="senha" type="text" id="campo-senha"></input>
+    <input name="senha" class="checkbox" type="text" id="campo-senha">
 </div>
 </section>
 <div>
     <h3>Persolnalize sua senha</h3>
+    <div id="nCaracteres">
+        <p style="font-size: 24px;padding-top: 7px;">Número de caracteres</p>
+           <div class="boxbotoes">             
+        <button class = "parametro-senha__botao"id="diminuirChar">-</button>
+        <div id="valorCharDiv"  style=" width: 55px; height: 51px; border: solid 2px; border-color: #0075FF;">
+            <p class="parametro-senha__texto">12</p></div>
+        <button class = "parametro-senha__botao"id="aumentarChar">+</button>
+    </div>
     <div class="parametro-coluna-senha">
         <div class="parametro-senha"></div>
         <label class="parametro-senha-titulo">Caracteristícas da senha</label>
@@ -32,16 +40,8 @@
 
 
 
-
-        <div class="cntr">
-         
-        <input name= "maiusculo" type="checkbox" class="checkbox" checked>
-
-
-
-
-
-
+           
+    <input name= "maiusculo" type="checkbox" class="checkbox" checked>
         <label for="maiusculo">letras maiúsculas</label>
     </div>
     <div class="parametro-senha-checkbox">
@@ -55,9 +55,15 @@
     </div>
     <div class="parametro-senha-checkbox">
         <input name="simbolo" type="checkbox" class="checkbox">
-        <label class="parametro-senha-titulo">Força da senha</label>
+        <label class="parametro-senha-titulo">Símbolos</label>
     </div>
+    
+
+</div>
+
+
     <div class="parametro-senha">
+        <h4 class="Força da Senha"></h4>
         
         <div class="barra"></div>
         <div class="forca fraca"></div>
@@ -66,9 +72,13 @@
             <p>Média</p>
             <p>Forte</p>
         </div>
+        <p class="entropia"></p>
     </div>
     </div>
 </div>
+
+
+
 <script src="main.js"></script>
 </body>
 </html>
